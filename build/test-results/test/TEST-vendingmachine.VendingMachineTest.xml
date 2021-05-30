@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="vendingmachine.VendingMachineTest" tests="4" skipped="1" failures="0" errors="0" timestamp="2021-05-30T08:26:23" hostname="pysui-MacBookPro.local" time="0.098">
+<testsuite name="vendingmachine.VendingMachineTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-05-30T09:33:26" hostname="pysui-MacBookPro.local" time="0.067">
   <properties/>
-  <testcase name="자판기에_500원을_넣으면_500원이_들어있음을_알_수_있다" classname="vendingmachine.VendingMachineTest" time="0.086"/>
-  <testcase name="자판기에_1000원을_넣으면_1000원이_들어있음을_알_수_있다" classname="vendingmachine.VendingMachineTest" time="0.001"/>
-  <testcase name="_1000원이_들이있는_자판기에_500원을_넣으면_1500원이_들어있음을_알_수_있다()" classname="vendingmachine.VendingMachineTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="자판기_생성()" classname="vendingmachine.VendingMachineTest" time="0.005"/>
+  <testcase name="자판기에 500원을 넣으면 500원이 들어있음을 알 수 있다" classname="vendingmachine.VendingMachineTest" time="0.052"/>
+  <testcase name="자판기에 1000원을 넣으면 1000원이 들어있음을 알 수 있다" classname="vendingmachine.VendingMachineTest" time="0.001"/>
+  <testcase name="_500원이_들어있는_자판기에_500원을_차감하면_0원이_된다()" classname="vendingmachine.VendingMachineTest" time="0.001"/>
+  <testcase name="_0원이_들어있는_자판기에_500원을_차감하면_차감할_수_없다()" classname="vendingmachine.VendingMachineTest" time="0.008"/>
+  <testcase name="_1000원이_들이있는_자판기에_500원을_넣으면_1500원이_들어있음을_알_수_있다()" classname="vendingmachine.VendingMachineTest" time="0.0"/>
+  <testcase name="자판기_생성()" classname="vendingmachine.VendingMachineTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
