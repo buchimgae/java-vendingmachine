@@ -12,7 +12,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 class ChangesModuleTest {
 
     @Test
-    public void 자판기_생성(){
+    public void 잔돈_모듈_생성(){
         ChangesModule changesModule = new ChangesModule();
         Assertions.assertThat(changesModule).isNotNull();
     }

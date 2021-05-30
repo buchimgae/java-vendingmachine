@@ -1,2 +1,4 @@
-vendingmachine/VendingMachine.java
- vendingmachine.VendingMachine
+vendingmachine/ChangesModule.java
+ vendingmachine.ChangesModule
+vendingmachine/Coin.java
+ vendingmachine.Coin

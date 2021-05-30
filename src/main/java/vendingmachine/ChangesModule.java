@@ -16,11 +16,11 @@ public class ChangesModule {
     }
 
     public void withdraw(final int changes){
-        final int i = this.changes - changes;
-        if(i < 0){
+        final int result = this.changes - changes;
+        if(result < 0){
             throw new IllegalStateException();
         }
-        this.changes -= changes;
+        this.changes = result;
     }
 
     public int getChanges(){
