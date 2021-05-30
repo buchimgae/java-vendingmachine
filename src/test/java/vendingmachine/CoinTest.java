@@ -1,8 +1,10 @@
 package vendingmachine;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CoinTest {
@@ -12,19 +14,18 @@ class CoinTest {
         assertThat(coin).isNotNull();
     }
 
-    @Test
-    void 동전은_500원_100원_50원_10원이_있다(){
-        Coin _500krw = new Coin(500);
-        assertThat(_500krw).isEqualTo(new Coin(500));
+    @ParameterizedTest
+    @ValueSource(ints = {500, 100, 50, 10})
+    void 동전은_500원_100원_50원_10원이_있다(int value){
+        Coin coin = new Coin(value);
+        assertThat(coin).isEqualTo(new Coin(value));
+    }
 
-        Coin _100krw = new Coin(100);
-        assertThat(_100krw).isEqualTo(new Coin(100));
-
-        Coin _50krw = new Coin(50);
-        assertThat(_50krw).isEqualTo(new Coin(50));
-
-        Coin _10krw = new Coin(10);
-        assertThat(_10krw).isEqualTo(new Coin(10));
+    @ParameterizedTest
+    @ValueSource(ints = {499, 99, 9, 11})
+    void 존재하지_않는_동전을_정의한다(int value){
+        assertThatIllegalArgumentException()
+                .isThrownBy(() -> new Coin(value));
     }
 
 }

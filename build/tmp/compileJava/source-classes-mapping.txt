@@ -2,3 +2,5 @@ vendingmachine/ChangesModule.java
  vendingmachine.ChangesModule
 vendingmachine/Coin.java
  vendingmachine.Coin
+vendingmachine/CoinSet.java
+ vendingmachine.CoinSet

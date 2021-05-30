@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="vendingmachine.CoinSetTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-30T14:08:43" hostname="pysui-MacBookPro.local" time="0.047">
+  <properties/>
+  <testcase name="동전을_생성한다()" classname="vendingmachine.CoinSetTest" time="0.047"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
