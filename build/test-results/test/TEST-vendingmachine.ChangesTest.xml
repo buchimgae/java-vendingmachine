@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="vendingmachine.ChangesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-31T11:23:22" hostname="pysui-MacBookPro.local" time="0.059">
+<testsuite name="vendingmachine.ChangesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-31T12:07:41" hostname="pysui-MacBookPro.local" time="0.07">
   <properties/>
-  <testcase name="_10원이_남아_있다면_10원짜리_동전_1개를_돌려준다()" classname="vendingmachine.ChangesTest" time="0.059"/>
+  <testcase name="[1] 10, _10_COIN" classname="vendingmachine.ChangesTest" time="0.063"/>
+  <testcase name="[2] 50, _50_COIN" classname="vendingmachine.ChangesTest" time="0.001"/>
+  <testcase name="[3] 100, _100_COIN" classname="vendingmachine.ChangesTest" time="0.001"/>
+  <testcase name="[4] 500, _500_COIN" classname="vendingmachine.ChangesTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
