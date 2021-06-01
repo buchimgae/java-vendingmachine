@@ -10,5 +10,21 @@ public enum CoinSet {
     CoinSet(int value){
         this.value = value;
     }
+
+    public static CoinSet valueOf(final int amount) {
+        if(amount == 10){
+            return CoinSet._10_COIN;
+        }
+        if(amount == 50){
+            return CoinSet._50_COIN;
+        }
+        if(amount == 100){
+            return CoinSet._100_COIN;
+        }
+        if(amount == 500){
+            return CoinSet._500_COIN;
+        }
+        throw new IllegalArgumentException();
+    }
 }
 

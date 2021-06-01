@@ -1,6 +1,6 @@
-vendingmachine/CoinSetTest.java
- vendingmachine.CoinSetTest
 vendingmachine/ChangesModuleTest.java
  vendingmachine.ChangesModuleTest
 vendingmachine/ChangesTest.java
  vendingmachine.ChangesTest
+vendingmachine/CoinSetTest.java
+ vendingmachine.CoinSetTest

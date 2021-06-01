@@ -19,6 +19,16 @@ class CoinSetTest {
         assertThat(coin.value).isEqualTo(100);
     }
 
+    /**
+     *
+     */
+    @Test
+    void 동전(){
+        CoinSet coin = CoinSet.valueOf(10);
+        assertThat(coin).isEqualTo(CoinSet._10_COIN);
+    }
+
+
     @ParameterizedTest
     @MethodSource("coinSet")
     void 동전은_500원_100원_50원_10원이_있다(int value, CoinSet coin){

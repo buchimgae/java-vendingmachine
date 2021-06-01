@@ -1,6 +1,6 @@
 vendingmachine/ChangesModule.java
  vendingmachine.ChangesModule
-vendingmachine/CoinSet.java
- vendingmachine.CoinSet
 vendingmachine/Changes.java
  vendingmachine.Changes
+vendingmachine/CoinSet.java
+ vendingmachine.CoinSet
