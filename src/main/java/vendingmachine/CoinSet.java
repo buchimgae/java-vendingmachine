@@ -24,7 +24,7 @@ public enum CoinSet {
         if(amount == 500){
             return CoinSet._500_COIN;
         }
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException(amount + "원의 동전은 존재하지 않습니다.");
     }
 }
 

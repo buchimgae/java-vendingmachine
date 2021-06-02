@@ -1,5 +1,6 @@
 package vendingmachine;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,7 +12,14 @@ public class Changes {
     }
 
     List<CoinSet> coin(){
-        return Arrays.asList(CoinSet.valueOf(amount));
-
+        List<CoinSet> list = new ArrayList<>();
+        for(CoinSet coin : CoinSet.values()){
+            final int count = amount / coin.value;
+            for(int i = 0; i < count; i++){
+                list.add(coin);
+            }
+            amount = amount - (count * coin.value);
+        }
+        return list;
     }
 }
